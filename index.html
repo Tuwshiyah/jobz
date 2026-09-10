@@ -24,7 +24,6 @@ input:focus,textarea:focus{outline:none;border-color:#FF6A13 !important}
 <div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;gap:20px;padding:36px 16px 48px;box-sizing:border-box">
   <div style="max-width:520px;text-align:center;display:flex;flex-direction:column;gap:6px">
     <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:26px;color:#141414">Jobz <span style="font-family:'Hanken Grotesk',sans-serif;font-style:normal;font-weight:500;font-size:14px;color:#6B6B6B;margin-left:8px">redesign · espace client</span></div>
-    <div style="font-size:12.5px;line-height:1.5;color:#6B6B6B;text-wrap:pretty">Base visuelle : Housfix (orange, serif italique en accent, cartes blanches, nav flottante). Contenu repris du prototype v2, données et photos de démonstration.</div>
   </div>
 
   <x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" width="{{ 393 }}" height="{{ 852 }}" dark="{{ true }}" hint-size="393px,852px">
@@ -976,7 +975,7 @@ input:focus,textarea:focus{outline:none;border-color:#FF6A13 !important}
   </x-import>
 
   <template id="__bundler_thumbnail" data-bg-color="#F26F2A"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#F26F2A"/><text x="100" y="128" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="84" fill="#fff">J</text></svg></template>
-  <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-width:560px">
+  <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;max-width:560px">
     <sc-for list="{{ jumps }}" as="j" hint-placeholder-count="8">
       <div onClick="{{ j.press }}" style="padding:6px 11px;border-radius:999px;font-size:12px;font-weight:500;cursor:pointer;background:{{ j.bg }};color:{{ j.color }};border:1px solid rgba(0,0,0,.08)">{{ j.label }}</div>
     </sc-for>
